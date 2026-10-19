@@ -9,17 +9,17 @@
 
 ## Part B — write the tests (`tests/`)
 API (`test_api.py`)
-- [ ] register then login returns a JWT (three dotted parts)
-- [ ] wrong password returns 401
-- [ ] create a note, then see it in your list
+- [x] register then login returns a JWT (three dotted parts)
+- [x] wrong password returns 401
+- [x] create a note, then see it in your list
 
 Security (`test_security.py`)
-- [ ] bad token rejected (401)
-- [ ] a user can't read another's note (403)  ← A01
-- [ ] a user can read their own note (200)
-- [ ] same login error for bad user vs bad password  ← A07
-- [ ] a non-admin can't list users (403)  ← A01
-- [ ] admin list has no password field  ← A04
+- [x] bad token rejected (401)
+- [x] a user can't read another's note (403)  ← A01
+- [x] a user can read their own note (200)
+- [x] same login error for bad user vs bad password  ← A07
+- [x] a non-admin can't list users (403)  ← A01
+- [x] admin list has no password field  ← A04
 
 **Goal:** all 5 tasks done AND all 11 tests green (`pytest -q`). Then `pytest --cov=app`.
 
